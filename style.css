@@ -60,3 +60,21 @@ header{
 .btn-header:first-of-type{
     margin-left: auto;
 }
+
+corpo{
+    display: grid;
+    place-items: center;
+}
+
+#gifBG{
+    z-index: -50;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    align-self: stretch;
+}
+
+#fotoPrincipal{
+    width: 50vw;
+    margin-top: 50px;
+}
