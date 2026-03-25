@@ -4,6 +4,7 @@
 <head>
     <title>Dead By Daylight</title>
     <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <button class="btn-header">Sobreviventes</button>
         <button class="btn-header">Assassinos</button>
         <button class="btn-header">Mecanicas</button>
-        <button id="btn-jogar">Jogue Agora</button>
+        <button id="btn-jogar" onclick="redirecionar()">Jogue Agora</button>
 
     </header>
 
@@ -40,7 +41,7 @@
             <h2>Assassino</h2>
             <img src="img/killer.jpg" alt="Assassino">
             <p>Persiga sobreviventes e sacrifique-os para a Entidade.</p>
-            <button>Ver Assassinos</button>
+            <button onclick="levarAssasino()">Ver Assassinos</button>
         </div>
 
         <div class="card sobrevivente">
