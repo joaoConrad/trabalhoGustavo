@@ -102,4 +102,12 @@ corpo{
     font-size: 2.7em;
 }
 
+#learnMore{
+    display: flex;
+    justify-content: space-between;
+}
 
+#learnMore > img{
+    margin-top: 100px;
+    width: 25%;
+}
