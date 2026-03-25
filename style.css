@@ -1,7 +1,12 @@
+@font-face {
+  font-family: 'Montagna';
+  src: url('fonts/MontagnaLTD.ttf') format('truetype');
+}
+
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial;
+    font-family: Montagna;
 }
 
 button{
@@ -19,6 +24,8 @@ header{
     background-color: black;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100vw;
 }
 
 #imgLogo{
@@ -30,14 +37,15 @@ header{
     color: #f2f2f2;
     background-color: darkred;
     align-self: stretch;
-    font-size: 1.3em;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
     transition: all 0.3s ease;
+    margin-left: auto;
 }
 
 #btn-jogar:hover{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .btn-header{
@@ -54,11 +62,7 @@ header{
 .btn-header:hover{
     color: darkred;
     background-color: #f2f2f2;
-    font-size: 1.5em;
-}
-
-.btn-header:first-of-type{
-    margin-left: auto;
+    font-size: 1.6em;
 }
 
 corpo{
@@ -78,3 +82,24 @@ corpo{
     width: 50vw;
     margin-top: 50px;
 }
+
+#mainImg{
+    margin-top: 6%;
+    width: 70vw;
+    margin-bottom: 25px;
+}
+
+#buyHome{
+    width: 75vw;
+    background-color: darkred;
+    color: #f2f2f2;
+    font-size: 2.5em;
+    transition: all 0.3s ease;
+    padding: 3px;
+}
+
+#buyHome:hover{
+    font-size: 2.7em;
+}
+
+
