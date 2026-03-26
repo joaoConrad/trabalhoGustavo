@@ -61,3 +61,26 @@ function redirecionarReddit() {
         "_blank"
     );
 }
+
+
+
+let index = 0;
+
+const texts = document.querySelectorAll(".carousel-text .text");
+const images = document.querySelectorAll(".carousel-images img");
+
+function trocarSlide() {
+    // remove active
+    texts[index].classList.remove("active");
+    images[index].classList.remove("active");
+
+    // próximo
+    index = (index + 1) % texts.length;
+
+    // adiciona active
+    texts[index].classList.add("active");
+    images[index].classList.add("active");
+}
+
+// troca a cada 3 segundos
+setInterval(trocarSlide, 10000);
