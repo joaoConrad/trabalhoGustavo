@@ -5,64 +5,28 @@
     <title>Dead By Daylight</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="img/dbdLogoMassa.png" type="image/x-icon">
 </head>
 
 <body>
+    <body>
     <header>
         <img src="img/headerLogo.png" id="imgLogo">
 
-        <button class="btn-header" onclick="home()">Home</button>
+        <button class="btn-header">Home</button>
         <button class="btn-header" onclick="learnMore()">Learn More</button>
         <button class="btn-header" onclick="redirecionarReddit()">Forum</button>
         <button class="btn-header" onclick="redirecionarDiscord()">Discord</button>
         <button id="btn-jogar" onclick="redirecionar()">Play Now</button>
-
     </header>
 
     <corpo>
-
         <img src="img/bgGif.gif" id="gifBG">
         <img src="img/mainImg.png" id="mainImg">
 
         <button id="buyHome" onclick="exibirTrailer()">Watch Trailer</button>
         <div id="trailer"></div>
 
-        <div id="carousel">
-
-            <div class="carousel-text">
-                <div class="text active">Fixing generators around the map is the only way to open the gates and try to
-                    escape. Survivors can team up to speed things up while danger gets closer.</div>
-
-                <div class="text">When put on a hook, the survivor starts slowly losing health and needs to be rescued
-                    by another player within a limited time. If that doesn’t happen, they’re eliminated from the match
-                </div>
-
-                <div class="text">The perk system works like a set of abilities that shape each character’s playstyle.
-                    Survivors and killers can equip up to four perks before a match, mixing and matching them for
-                    different advantages.</div>
-
-                <div class="text">The totem mechanic involves objects scattered around the map that can affect the
-                    match. Some stay inactive, while others activate special killer abilities, directly influencing the
-                    game.</div>
-
-                <div class="text">The pallet mechanic involves wooden boards scattered around the map that survivors can
-                    drop to block the killer’s path and buy time during chases.</div>
-            </div>
-
-            <div class="carousel-images">
-                <img src="img/gen.png" class="active">
-                <img src="img/hook.png">
-                <img src="img/perk.png">
-                <img src="img/toten.png">
-                <img src="img/pallet.png">
-            </div>
-
-        </div>
-
-
         <div id="learnMore">
-
             <div class="card">
                 <img src="img/survLogo.png">
                 <button class="btn-gameFunctions" id="btnSurv">Play as Survivor</button>
@@ -72,17 +36,73 @@
                 <img src="img/killerLogo.png">
                 <button class="btn-gameFunctions" id="btnKiller">Play as Killer</button>
             </div>
-
         </div>
 
+        <!-- MODAL SURVIVOR -->
+        <dialog id="modalSurvivor">
+            <h2>Survivors</h2>
+
+            <div class="lista-personagens">
+                <div class="personagem">
+                    <p>Dustin Henderson</p>
+                    <button onclick="abrirDLC('Dustin')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Rick Grimes</p>
+                    <button onclick="abrirDLC('Rick')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Leon S. Kennedy</p>
+                    <button onclick="abrirDLC('Leon')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Nicolas Cage</p>
+                    <button onclick="abrirDLC('Nicolas')">Ver DLC</button>
+                </div>
+            </div>
+
+            <button onclick="fecharModal('modalSurvivor')">Fechar</button>
+        </dialog>
+
+        <!-- MODAL KILLER -->
+        <dialog id="modalKiller">
+            <h2>Killers</h2>
+
+            <div class="lista-personagens">
+                <div class="personagem">
+                    <p>Vecna</p>
+                    <button onclick="abrirDLC('Vecna')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Springtrap</p>
+                    <button onclick="abrirDLC('Springtrap')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Leatherface</p>
+                    <button onclick="abrirDLC('Leatherface')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Krasue</p>
+                    <button onclick="abrirDLC('Krasue')">Ver DLC</button>
+                </div>
+            </div>
+
+            <button onclick="fecharModal('modalKiller')">Fechar</button>
+        </dialog>
 
     </corpo>
-
 
     <footer>
         <p>Desenvolvido por João Conrad & Murilo Conterato</p>
         <p>Obrigado por visitar nosso site</p>
     </footer>
+</body>
 
 </body>
 
