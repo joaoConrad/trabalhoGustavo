@@ -6,6 +6,10 @@ function redirecionar() {
     );
 }
 
+function home(){
+    window.location.href = "index.html";
+}
+
 function exibirTrailer() {
     const trailer = document.getElementById("trailer");
 
@@ -38,14 +42,7 @@ function fecharVideo() {
 }
 
 function learnMore() {
-
-    const destino = document.getElementById('homeButtons');
-
-    window.scrollTo({
-        top: destino.offsetTop,
-        behavior: "smooth"
-    });
-
+    window.location.href = "learnMore.html";
 }
 
 function redirecionarDiscord() {
