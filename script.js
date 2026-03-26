@@ -6,6 +6,37 @@ function redirecionar() {
     );
 }
 
+function exibirTrailer() {
+    const trailer = document.getElementById("trailer");
+
+    // mostra a div
+    trailer.style.display = "flex";
+
+    // cria o vídeo só se ainda não existir
+    if (trailer.innerHTML === "") {
+        trailer.innerHTML = `
+            <video autoplay controls>
+                <source src="vids/trailerDbd.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        `;
+    }
+}
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        fecharVideo();
+    }
+});
+
+function fecharVideo() {
+    const trailer = document.getElementById("trailer");
+
+    trailer.style.display = "none";
+
+    trailer.innerHTML = "";
+}
+
 function learnMore() {
 
     const destino = document.getElementById('homeButtons');

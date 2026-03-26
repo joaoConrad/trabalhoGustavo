@@ -162,3 +162,23 @@ footer {
     width: 100%;
     margin-top: 40px;
 }
+
+#trailer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#trailer video {
+    width: 80%;
+    height: auto;
+    max-height: 90%;
+}
