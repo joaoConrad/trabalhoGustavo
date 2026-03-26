@@ -270,3 +270,127 @@ footer {
 #plataformas{
     width: 50vw;
 }
+
+/* ===== MODAIS GERAIS ===== */
+dialog {
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    width: 400px;
+    max-width: 90vw;
+
+    color: #f2f2f2;
+    text-align: center;
+
+    /* CENTRALIZAÇÃO PERFEITA */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* EFEITO */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    animation: aparecer 0.3s ease;
+}
+
+/* FUNDO ESCURO */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+/* ===== CORES DIFERENTES ===== */
+
+/* Survivor (AZUL) */
+#modalSurvivor {
+    background: linear-gradient(135deg, #0a1f44, #1e3a8a);
+    border: 2px solid #3b82f6;
+}
+
+/* Killer (VERMELHO) */
+#modalKiller {
+    background: linear-gradient(135deg, #3b0000, #8b0000);
+    border: 2px solid red;
+}
+
+/* ===== LISTA ===== */
+.lista-personagens {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* SCROLL BONITO */
+.lista-personagens::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lista-personagens::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* ===== CARDS ===== */
+.personagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.personagem:hover {
+    transform: scale(1.03);
+}
+
+/* ===== BOTÕES ===== */
+.personagem button {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* botão survivor azul */
+#modalSurvivor .personagem button:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* botão killer vermelho */
+#modalKiller .personagem button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* BOTÃO FECHAR */
+dialog > button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+dialog > button:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

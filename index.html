@@ -72,6 +72,65 @@
                 <button class="btn-gameFunctions" id="btnKiller">Play as Killer</button>
             </div>
 
+
+            <!-- MODAL SURVIVOR -->
+        <dialog id="modalSurvivor">
+            <h2>Survivors</h2>
+
+            <div class="lista-personagens">
+                <div class="personagem">
+                    <p>Dustin Henderson</p>
+                    <button onclick="abrirDLC('Dustin')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Rick Grimes</p>
+                    <button onclick="abrirDLC('Rick')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Leon S. Kennedy</p>
+                    <button onclick="abrirDLC('Leon')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Nicolas Cage</p>
+                    <button onclick="abrirDLC('Nicolas')">Ver DLC</button>
+                </div>
+            </div>
+
+            <button onclick="fecharModal('modalSurvivor')">Fechar</button>
+        </dialog>
+
+        <!-- MODAL KILLER -->
+        <dialog id="modalKiller">
+            <h2>Killers</h2>
+
+            <div class="lista-personagens">
+                <div class="personagem">
+                    <p>Vecna</p>
+                    <button onclick="abrirDLC('Vecna')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Springtrap</p>
+                    <button onclick="abrirDLC('Springtrap')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Leatherface</p>
+                    <button onclick="abrirDLC('Leatherface')">Ver DLC</button>
+                </div>
+
+                <div class="personagem">
+                    <p>Krasue</p>
+                    <button onclick="abrirDLC('Krasue')">Ver DLC</button>
+                </div>
+            </div>
+
+            <button onclick="fecharModal('modalKiller')">Fechar</button>
+        </dialog>
+
         </div>
 
 
