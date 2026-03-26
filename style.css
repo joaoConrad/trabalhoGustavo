@@ -107,15 +107,26 @@ corpo{
 #learnMore{
     display: flex;
     justify-content: space-between;
+    width: 75vw;
 }
 
-#learnMore > img{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 25%;
-}
-
-#homeButtons{
+.card{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card img{
+    width: 300px; /* ou o tamanho que quiser */
+    margin-bottom: 20px;
+}
+
+.btn-gameFunctions{
+    color: #f2f2f2;
+    background-color: darkred;
+    font-size: 1.3em;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
