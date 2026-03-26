@@ -6,13 +6,27 @@ function redirecionar() {
     );
 }
 
-function levarAssassino() {
+function learnMore() {
 
-    const destino = document.getElementById('assassino_button');
+    const destino = document.getElementById('homeButtons');
 
     window.scrollTo({
         top: destino.offsetTop,
         behavior: "smooth"
     });
 
+}
+
+function redirecionarDiscord() {
+    window.open(
+        "https://discord.com/invite/dbdbrasil",
+        "_blank"
+    );
+}
+
+function redirecionarReddit() {
+    window.open(
+        "https://www.reddit.com/r/deadbydaylight",
+        "_blank"
+    );
 }
