@@ -237,3 +237,36 @@ footer {
 .carousel-images img.active {
     opacity: 1;
 }
+
+
+#imagemEDesc{
+    display: flex;
+
+}
+
+
+#corpoLearnMore{
+    display: grid;
+    place-items: center;
+}
+
+#logoLearnMore{
+    width: 60vw;
+    margin-top: 20px;
+    margin-bottom: -200px;
+}
+
+#logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#disponivelEm{
+    color: #f2f2f2;
+    font-size: 3em;
+}
+
+#plataformas{
+    width: 50vw;
+}

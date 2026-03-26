@@ -83,4 +83,4 @@ function trocarSlide() {
 }
 
 // troca a cada 3 segundos
-setInterval(trocarSlide, 10000);
+setInterval(trocarSlide, 11000);
