@@ -123,10 +123,31 @@ corpo{
 }
 
 .btn-gameFunctions{
-    color: #f2f2f2;
-    background-color: darkred;
     font-size: 1.3em;
     padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
+    transition: all 0.3s ease;
+}
+
+#btnSurv{
+    color: #f2f2f2;
+    background-color: blue;
+}
+
+#btnKiller{
+    color: #f2f2f2;
+    background-color: darkred;
+}
+
+#btnSurv:hover{
+    color: blue;
+    background-color: #f2f2f2;
+    font-size: 1.5em;
+}
+
+#btnKiller:hover{
+    color: darkred;
+    background-color: #f2f2f2;
+    font-size: 1.5em;
 }
