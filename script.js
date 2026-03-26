@@ -66,19 +66,16 @@ const texts = document.querySelectorAll(".carousel-text .text");
 const images = document.querySelectorAll(".carousel-images img");
 
 function trocarSlide() {
-    // remove active
+    
     texts[index].classList.remove("active");
     images[index].classList.remove("active");
 
-    // próximo
     index = (index + 1) % texts.length;
 
-    // adiciona active
     texts[index].classList.add("active");
     images[index].classList.add("active");
 }
 
-// troca a cada 3 segundos
 setInterval(trocarSlide, 11000);
 
 const btnSurv = document.getElementById("btnSurv");
@@ -87,7 +84,7 @@ const btnKiller = document.getElementById("btnKiller");
 const modalSurv = document.getElementById("modalSurvivor");
 const modalKiller = document.getElementById("modalKiller");
 
-// abrir modais
+
 btnSurv.addEventListener("click", () => {
     modalSurv.showModal();
     descerPagina();
@@ -98,12 +95,12 @@ btnKiller.addEventListener("click", () => {
     descerPagina();
 });
 
-// fechar modal
+
 function fecharModal(id) {
     document.getElementById(id).close();
 }
 
-// scroll automático
+
 function descerPagina() {
     window.scrollTo({
         top: document.body.scrollHeight,
@@ -111,7 +108,7 @@ function descerPagina() {
     });
 }
 
-// links das DLCs
+
 function abrirDLC(personagem) {
     const links = {
         Dustin: "https://store.steampowered.com/bundle/67029/Dead_by_Daylight_Stranger_Things_Complete_Edition/",

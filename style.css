@@ -337,7 +337,6 @@ dialog::backdrop {
     transform: scale(1.03);
 }
 
-/* ===== BOTÕES ===== */
 .personagem button {
     background-color: white;
     color: black;
