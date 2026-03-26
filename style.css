@@ -118,7 +118,7 @@ corpo{
 }
 
 .card img{
-    width: 300px; /* ou o tamanho que quiser */
+    width: 300px;
     margin-bottom: 20px;
 }
 
@@ -150,4 +150,15 @@ corpo{
     color: darkred;
     background-color: #f2f2f2;
     font-size: 1.5em;
+}
+
+footer {
+    background-color: black;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
 }
