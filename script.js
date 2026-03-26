@@ -13,10 +13,9 @@ function home(){
 function exibirTrailer() {
     const trailer = document.getElementById("trailer");
 
-    // mostra a div
     trailer.style.display = "flex";
 
-    // cria o vídeo só se ainda não existir
+
     if (trailer.innerHTML === "") {
         trailer.innerHTML = `
             <video autoplay controls>
