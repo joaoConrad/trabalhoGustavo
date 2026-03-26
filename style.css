@@ -20,7 +20,7 @@ body{
 }
 
 body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+    display: none;
 }
 
 header{
